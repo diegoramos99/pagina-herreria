@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forja | Herrería y Herrajes</title>
+    <meta name="description"
+          content="Herrería, portones, rejas, estructuras metálicas y herrajes. Consultá por tu proyecto.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">
+            <i class="bi bi-tools text-warning"></i> FORJA<span>.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-orange" href="#contacto">Pedir presupuesto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PORTADA -->
+<header id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <span class="eyebrow">HERRERÍA · HERRAJES · ESTRUCTURAS</span>
+
+        <h1>El metal cobra<br>
+            <span>forma y carácter.</span>
+        </h1>
+
+        <p>
+            Fabricación, reparación y venta de herrajes.
+            Soluciones resistentes para tu hogar, comercio o industria.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+            <a href="#productos" class="btn btn-orange btn-lg">
+                Ver productos <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="#contacto" class="btn btn-outline-light btn-lg">
+                Solicitar presupuesto
+            </a>
+        </div>
+
+        <div class="hero-features">
+            <div><i class="bi bi-check-circle"></i> Trabajos a medida</div>
+            <div><i class="bi bi-shield-check"></i> Calidad y resistencia</div>
+            <div><i class="bi bi-wrench-adjustable"></i> Soluciones integrales</div>
+        </div>
+    </div>
+</header>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section-padding">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="eyebrow">QUÉ HACEMOS</span>
+            <h2>Soluciones en <span>metal</span></h2>
+            <p>Desde pequeños herrajes hasta proyectos personalizados.</p>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <article class="service-card">
+                    <i class="bi bi-house-door"></i>
+                    <h3>Herrería de obra</h3>
+                    <p>Portones, rejas, barandas, escaleras y cerramientos.</p>
+                    <a href="#contacto">Consultar <i class="bi bi-arrow-up-right"></i></a>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="service-card">
+                    <i class="bi bi-nut"></i>
+                    <h3>Herrajes y accesorios</h3>
+                    <p>Bisagras, cerraduras, pasadores, tornillería y fijaciones.</p>
+                    <a href="#productos">Ver productos <i class="bi bi-arrow-up-right"></i></a>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="service-card">
+                    <i class="bi bi-building"></i>
+                    <h3>Estructuras metálicas</h3>
+                    <p>Soportes, marcos, estructuras y soluciones para comercios.</p>
+                    <a href="#contacto">Consultar <i class="bi bi-arrow-up-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="section-padding products-section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">CATÁLOGO</span>
+            <h2>Productos destacados</h2>
+            <p>Encontrá lo que necesitás para tu próximo proyecto.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters d-flex flex-wrap gap-2 my-4">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="herrajes">Herrajes</button>
+            <button class="filter-btn" data-filter="herrería">Herrería</button>
+            <button class="filter-btn" data-filter="estructuras">Estructuras</button>
+        </div>
+
+        <div class="row g-4" id="product-list">
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="herrería">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=85"
+                          alt="Portón de metal"
+                          loading="lazy">
+                        <span class="product-tag">A medida</span>
+                    </div>
+                    <div class="product-info">
+                        <small>HERRERÍA</small>
+                        <h3>Portones y rejas</h3>
+                        <p>Diseños funcionales para proteger y renovar tus espacios.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Portones y rejas">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="herrajes">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=85"
+                          alt="Herramientas y accesorios de taller"
+                          loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <small>HERRAJES</small>
+                        <h3>Accesorios y fijaciones</h3>
+                        <p>Elementos para montaje, reparación y mantenimiento.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Accesorios y fijaciones">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="estructuras">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=85"
+                          alt="Soldadura de piezas metálicas"
+                          loading="lazy">
+                        <span class="product-tag">Industrial</span>
+                    </div>
+                    <div class="product-info">
+                        <small>ESTRUCTURAS</small>
+                        <h3>Soldadura y estructuras</h3>
+                        <p>Fabricación y reparación de componentes metálicos.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Soldadura y estructuras">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="herrajes">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=85"
+                          alt="Trabajo técnico en taller"
+                          loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <small>HERRAJES</small>
+                        <h3>Repuestos y accesorios</h3>
+                        <p>Soluciones para trabajos de instalación y mantenimiento.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Repuestos y accesorios">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="herrería">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85"
+                          alt="Diseño moderno de vivienda"
+                          loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <small>HERRERÍA</small>
+                        <h3>Terminaciones modernas</h3>
+                        <p>Detalles metálicos que combinan diseño y funcionalidad.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Terminaciones modernas">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 product-item" data-category="estructuras">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=85"
+                          alt="Trabajo de construcción y montaje"
+                          loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <small>ESTRUCTURAS</small>
+                        <h3>Montajes y reparaciones</h3>
+                        <p>Trabajos para obras, talleres y espacios comerciales.</p>
+                        <a href="#contacto" class="product-link"
+                           data-product="Montajes y reparaciones">
+                            Consultar precio <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="section-padding about-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img
+                  class="about-image"
+                  src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1000&q=85"
+                  alt="Herramientas y trabajo artesanal en metal"
+                  loading="lazy">
+            </div>
+
+            <div class="col-lg-6">
+                <span class="eyebrow">NUESTRO COMPROMISO</span>
+                <h2>Experiencia, precisión y <span>resistencia.</span></h2>
+                <p>
+                    Trabajamos para ofrecer soluciones prácticas y duraderas,
+                    con atención personalizada y productos adecuados para cada necesidad.
+                </p>
+
+                <div class="about-point">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                        <h4>Atención personalizada</h4>
+                        <p>Escuchamos tu idea y te ayudamos a encontrar una solución.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                        <h4>Calidad en cada detalle</h4>
+                        <p>Priorizamos buenos materiales y terminaciones cuidadas.</p>
+                    </div>
+                </div>
+
+                <a href="#contacto" class="btn btn-orange mt-3">
+                    Hablemos de tu proyecto
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LLAMADO A LA ACCIÓN -->
+<section class="cta-section">
+    <div class="container d-lg-flex align-items-center justify-content-between gap-4">
+        <div>
+            <span class="eyebrow">¿TENÉS UN PROYECTO?</span>
+            <h2>Lo hacemos realidad.</h2>
+            <p class="mb-lg-0">Contanos qué necesitás y te orientamos.</p>
+        </div>
+        <a href="#contacto" class="btn btn-orange btn-lg mt-3 mt-lg-0">
+            Pedir presupuesto <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section-padding contact-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <span class="eyebrow">CONTACTO</span>
+                <h2>Hablemos de tu próximo <span>proyecto.</span></h2>
+                <p>Completá el formulario y prepará tu consulta por WhatsApp.</p>
+
+                <div class="contact-detail">
+                    <i class="bi bi-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>Consultas y presupuestos</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <strong>Ubicación</strong>
+                        <p>virrey del pino papa</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="bi bi-clock"></i>
+                    <div>
+                        <strong>Horarios</strong>
+                        <p>cuando quieras,soy un vago estoy libre siempre</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <form id="contact-form" class="contact-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="nombre" class="form-control"
+                                   placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control"
+                                   placeholder="Tu teléfono">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="servicio" class="form-label">¿Qué necesitás?</label>
+                            <select id="servicio" class="form-select" required>
+                                <option value="">Seleccioná una opción</option>
+                                <option>Portones y rejas</option>
+                                <option>Herrajes y accesorios</option>
+                                <option>Estructuras metálicas</option>
+                                <option>Soldadura y reparaciones</option>
+                                <option>Otro trabajo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Detalles del proyecto</label>
+                            <textarea id="mensaje" class="form-control" rows="4"
+                                      placeholder="Contanos qué necesitás..."
+                                      required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-orange btn-lg w-100">
+                                <i class="bi bi-whatsapp"></i>
+                                Enviar consulta por WhatsApp
+                            </button>
+                            <small class="form-note">
+                                Se abrirá WhatsApp con tu mensaje listo para enviar.
+                            </small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container d-md-flex justify-content-between align-items-center">
+        <a class="navbar-brand fw-bold" href="#inicio">
+            <i class="bi bi-tools text-warning"></i> FORJA<span>.</span>
+        </a>
+
+        <p class="my-3 my-md-0">
+            © <span id="year"></span> Forja. Todos los derechos reservados.
+        </p>
+
+        <a href="#inicio" class="back-top">
+            Volver arriba <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a id="whatsapp-float" class="whatsapp-float"
+   href="#" target="_blank" rel="noopener"
+   aria-label="Contactar por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript propio -->
+<script src="script.js"></script>
+
+</body>
+</html>
